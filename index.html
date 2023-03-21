@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Binary Playground</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+
+<script src="app.js"></script>
+<body onload="init()">
+    <header>
+        <h1 align="center">The Binary Playground</h1>
+    </header>
+
+    <div class="row">
+        <div class="column">
+            <table class="table">
+                <tr>
+                    <td class="header"> Binary calculation</td>
+                    <td>2^7</td>
+                    <td>2^6</td>
+                    <td>2^5</td>
+                    <td>2^4</td>
+                    <td>2^3</td>
+                    <td>2^2</td>
+                    <td>2^1</td>
+                    <td>2^0</td>
+                </tr>
+                <tr>
+                    <td class="header">17 = 16 + 1 =</td>
+                    <td>128</td>
+                    <td>64</td>
+                    <td>32</td>
+                    <td><b>16</b></td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td><b>1</b></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="column">
+            <table class="table">
+                <tr>
+                    <td class="header" rowspan="2">Hex calculation</td>
+                    <td colspan="4" class="border-left">16^1</td>
+                    <td colspan="4" class="border-left">16^0</td>
+                </tr>
+                <tr>
+                    <td class="border-left">8</td>
+                    <td>4</td>
+                    <td><b>2</b></td>
+                    <td>1</td>
+                    <td class="border-left"><b>8</b></td>
+                    <td>4</td>
+                    <td><b>2</b></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2 A =</td>
+                    <td colspan="4" class="border-left">2</td>
+                    <td colspan="4" class="border-left">A</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <table class="table">
+                <tr>
+                    <td class="header" rowspan="2">Hex to Decimal</td>
+                    <td colspan="4" class="border-left">2</td>
+                    <td colspan="4" class="border-left">A</td>
+                </tr>
+                <tr>
+                    <td class="border-left border-bottom">8</td>
+                    <td class="border-bottom">4</td>
+                    <td class="border-bottom"><b>2</b></td>
+                    <td class="border-bottom">1</td>
+                    <td class="border-left border-bottom"><b>8</b></td>
+                    <td class="border-bottom">4</td>
+                    <td class="border-bottom"><b>2</b></td>
+                    <td class="border-bottom">1</td>
+                </tr>
+                <tr>
+                    <td class="header">Binary</td>
+                    <td class="border-left border-bottom no-padding">128</td>
+                    <td class="border-bottom no-padding">64</td>
+                    <td class="border-bottom no-padding"><b>32</b></td>
+                    <td class="border-bottom no-padding">16</td>
+                    <td class="border-bottom"><b>8</b></td>
+                    <td class="border-bottom">4</td>
+                    <td class="border-bottom"><b>2</b></td>
+                    <td class="border-bottom">1</td>
+                </tr>
+                <tr>
+                    <td class="header" rowspan="2">0x2A = 0d42 = 0b101010 = 32+8+2</td>
+                    <td colspan="8" class="border-left">0x2A = 32 + 8 + 2 = <b>42</b></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="column">
+            <table class="table">
+                <tr>
+                    <td class="header" rowspan="2">AND-ing & OR-ing of binary numbers</td>
+                    <td class="border-left">1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="border-left border-bottom">1</td>
+                    <td class="border-bottom">0</td>
+                    <td class="border-bottom">1</td>
+                    <td class="border-bottom">0</td>
+                    <td class="border-bottom">1</td>
+                    <td class="border-bottom">0</td>
+                    <td class="border-bottom">1</td>
+                    <td class="border-bottom">1</td>
+                </tr>
+                <tr>
+                    <td class="header">AND: 1 AND 1 = 1; Else is 0</td>
+                    <td class="border-left border-bottom">1</td>
+                    <td class="border-bottom">0</td>
+                    <td class="border-bottom">1</td>
+                    <td class="border-bottom">0</td>
+                    <td class="border-bottom">0</td>
+                    <td class="border-bottom">0</td>
+                    <td class="border-bottom">1</td>
+                    <td class="border-bottom">1</td>
+                </tr>
+                <tr>
+                    <td class="header">OR: 0 OR 0 = 0; Else is 1</td>
+                    <td class="border-left">1</td>
+                    <td style="padding: 10.5px;">0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div style="margin-left: 50px;">
+                <h2>Binary to Decimal</h2>
+                <tag style="color: grey">0b</tag>
+                <tag id="bin1"></tag>
+                <input type="text" id="binToDec" name="binToDec"><br><br>
+                <script>
+                    YToX(2, 10, "binToDec");
+                </script>
+
+                <h2>Binary to Hex</h2>
+                <tag style="color: grey">0b</tag>
+                <tag id="bin2"></tag>
+                <input type="text" id="binToHex" name="binToHex"><br><br>
+                <script>
+                    YToX(2, 16, "binToHex");
+                </script>
+
+                <h2>Hex to Binary</h2>
+                <tag style="color: grey">0x</tag>
+                <tag id="hex1"></tag>
+                <input type="text" id="HexToBin" name="HexToBin"><br><br>
+                <script>
+                    YToX(16, 2, "HexToBin");
+                </script>
+            </div>
+        </div>
+
+        <div class="column">
+            <div style="float: right; margin-right: 50px;">
+                <h2>Hex to Decimal</h2>
+                <tag style="color: grey">0x</tag>
+                <tag id="hex2"></tag>
+                <input type="text" id="HexToDec" name="HexToDec"><br><br>
+                <script>
+                    YToX(16, 10, "HexToDec");
+                </script>
+
+                <h2>Decimalt to Binary</h2>
+                <tag style="color: grey">0d</tag>
+                <tag id="dec1"></tag>
+                <input type="text" id="DecToBin" name="DecToBin"><br><br>
+                <script>
+                    YToX(10, 2, "DecToBin");
+                </script>
+
+                <h2>Decimalt to Hex</h2>
+                <tag style="color: grey">0d</tag>
+                <tag id="dec2"></tag>
+                <input type="text" id="DecToHex" name="DecToHex"><br><br>
+                <script>
+                    YToX(10, 16, "DecToHex");
+                </script>
+            </div>
+        </div>
+        <div class="column">
+            <div style="margin-left: 20px; margin-right: 20px;">
+                <h2>AND-ing</h2>
+                <table class="table">
+                    <tr>
+                        <td id="and01" class="border"></td>
+                        <td id="and02" class="border"></td>
+                        <td id="and03" class="border"></td>
+                        <td id="and04" class="border"></td>
+                        <td id="and05" class="border"></td>
+                        <td id="and06" class="border"></td>
+                        <td id="and07" class="border"></td>
+                        <td id="and08" class="border"></td>
+                    </tr>
+                    <tr>
+                        <td id="and11" class="border"></td>
+                        <td id="and12" class="border"></td>
+                        <td id="and13" class="border"></td>
+                        <td id="and14" class="border"></td>
+                        <td id="and15" class="border"></td>
+                        <td id="and16" class="border"></td>
+                        <td id="and17" class="border"></td>
+                        <td id="and18" class="border"></td>
+                    </tr>
+                    <tr>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="i1" size="1" maxlength="1"
+                                onchange="checkand(1)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="i2" size="1" maxlength="1"
+                                onchange="checkand(2)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="i3" size="1" maxlength="1"
+                                onchange="checkand(3)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="i4" size="1" maxlength="1"
+                                onchange="checkand(4)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="i5" size="1" maxlength="1"
+                                onchange="checkand(5)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="i6" size="1" maxlength="1"
+                                onchange="checkand(6)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="i7" size="1" maxlength="1"
+                                onchange="checkand(7)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="i8" size="1" maxlength="1"
+                                onchange="checkand(8)";></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="column">
+            <div style="margin-left: 20px; margin-right: 20px;">
+                <h2>OR-ing</h2>
+                <table class="table">
+                    <tr>
+                        <td id="or01" class="border"></td>
+                        <td id="or02" class="border"></td>
+                        <td id="or03" class="border"></td>
+                        <td id="or04" class="border"></td>
+                        <td id="or05" class="border"></td>
+                        <td id="or06" class="border"></td>
+                        <td id="or07" class="border"></td>
+                        <td id="or08" class="border"></td>
+                    </tr>
+                    <tr>
+                        <td id="or11" class="border"></td>
+                        <td id="or12" class="border"></td>
+                        <td id="or13" class="border"></td>
+                        <td id="or14" class="border"></td>
+                        <td id="or15" class="border"></td>
+                        <td id="or16" class="border"></td>
+                        <td id="or17" class="border"></td>
+                        <td id="or18" class="border"></td>
+                    </tr>
+                    <tr>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="io1" size="1" maxlength="1"
+                                onchange="checkor(1)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="io2" size="1" maxlength="1"
+                                onchange="checkor(2)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="io3" size="1" maxlength="1"
+                                onchange="checkor(3)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="io4" size="1" maxlength="1"
+                                onchange="checkor(4)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="io5" size="1" maxlength="1"
+                                onchange="checkor(5)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="io6" size="1" maxlength="1"
+                                onchange="checkor(6)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="io7" size="1" maxlength="1"
+                                onchange="checkor(7)";></td>
+                        <td class="border"><input style="width:20px; text-align: center;" type="text" id="io8" size="1" maxlength="1"
+                                onchange="checkor(8)";></td>
+                    </tr>
+                </table>
+                <button
+                    style="margin-top: 40px; margin-left: 15px; cursor: pointer; height: 50px; border-radius: 10px; width: 300px; background-color: green; font-size: large; color: White;"
+                    onmousedown="location.reload();">New Assignment</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <tag>Techcollege Aalborg - Datatekniker og IT-supporter Uddannelsen - Christoffer Wittchen</tag>
+    </div>
+
+</body>
+
+</html>
