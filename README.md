@@ -1,6 +1,6 @@
-# The-Binary-Playground
-A simple website with binary, hex and decimal calculation.
-And-ing & Or-ing implementet as well.
+# <div align="center">The-Binary-Playground</div>
+<div align="center">A simple website with binary, hex and decimal calculation.</div>
+<div align="center">And-ing & Or-ing implementet as well.</div>
 
 <br><br>
 ### With colors it indicade, if the result is true or not
